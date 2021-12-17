@@ -17,7 +17,7 @@ function App() {
    dispatch(SetMovies(MoviesSections));
   },[])
   return (
-    <div className="App">
+    <div className="App" style={{backgroundColor:"black", height:"100vh"}}>
        <Header />
        <HeroBanner/>
        <MoviesCategories />
