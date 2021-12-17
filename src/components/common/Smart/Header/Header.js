@@ -1,6 +1,8 @@
 import React from 'react'
 import { Navbar,Nav,NavDropdown, Container } from 'react-bootstrap'
 import './Header.css';
+import icon1 from '../../../../images/searchicon.png'
+import icon2 from '../../../../images/setting.png'
 
 const Header = () => {
     return (
@@ -22,9 +24,9 @@ const Header = () => {
             </NavDropdown>
           </Nav>
           <Nav>
-            <Nav.Link className="navlinkr" href="#deets">More deets</Nav.Link>
+            <Nav.Link className="navlinkr" href="#deets"> <img style={{width:"20px" , height:"20px" , objectFit:"cover"}} src={icon1}  alt="img" /></Nav.Link>
             <Nav.Link className="navlinkr" eventKey={2} href="#memes">
-              Dank memes
+            <img style={{width:"20px" , height:"20px" , objectFit:"cover"}} src={icon2}  alt="img" />
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
