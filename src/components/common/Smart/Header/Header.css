@@ -1,0 +1,36 @@
+.navhead {
+    height: 80px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.navlinkr {
+    margin-left: 15px;
+    font-size: 0.8rem;
+    font-weight: 400;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+.navdropdn {
+    margin-left: 15px;
+    font-size: 0.8rem;
+    font-weight: 400;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+.navlinkr:hover {
+    color: white;
+
+}
+.navlinkr:after {
+    content: '';
+    display: block;
+    margin: auto;
+    height: 3px;
+    width: 0px;
+    background: transparent;
+    transition: width .5s ease, background-color .5s ease;
+  }
+  .navlinkr:hover:after {
+    width: 50%;
+    background: orange;
+  }
